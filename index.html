@@ -5,22 +5,1053 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="./img/favicon.png">
+
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-    <title>KT city</title>
+    <title>KTcity</title>
 </head>
 
 <body>
 
+    <div class="app">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="">
+                        <img class="logo" src="./img//ktcity-logo.png" alt="">
+                    </a>
+                </div>
+                <nav class="navbar" id="nav">
+                    <!-- <i class="fas fa-times nav__toggle--close"></i> -->
+                    <span class="nav__toggle--close">
+                        &times;
+                    </span>
+                    <div class="guest">
+                        <div class="guest__image">
+                            <img src="./img/default-avatar.png" class="guest__image--white" alt="">
+                        </div>
+                        <div class="guest__info">
+                            Hello,
+                            <strong>Guest</strong>
+                        </div>
+                    </div>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <img src="./img/HomePage/icon-menu-active.png" alt="">
+                                Kích hoạt COD
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <img src="./img/HomePage/icon-menu-search.png" alt="">
+                                Khám phá
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <img src="./img/HomePage/icon-menu-active.png" alt="">
+                                Sắp ra mắt
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <img src="./img/HomePage/icon-menu-search.png" alt="">
+                                Trending
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <img src="./img/HomePage/icon-menu-support.png" alt="">
+                                Hỗ trợ
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link--login">
+                                Đăng nhập
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link--avatar">
+                                <img class="avatar" src="./img/default-avatar.png" alt="">
+                            </a>
+                        </li>
+                        <a href="" class="nav__link--cart">
+                            <img class="bag" src="./img/icon-bag.png" alt="">
+                            <div class="cart-count">
+                                <span>0</span>
+                            </div>
+                        </a>
+                    </ul>
+                </nav>
+
+                <div class="header__right">
+                    <div class="header__bag">
+                        <a href="" class="nav__link--cart">
+                            <img class="bag" src="./img/icon-bag.png" alt="">
+                            <div class="cart-count">
+                                <span>0</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header__bar--icon">
+                        <i class="fas fa-bars header__right--icon"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="slider">
+            <div class="slider__main">
+                <div class="slide__item">
+                    <a href="" target="_blank">
+                        <img src="./img//HomePage/slide-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="slide__item">
+                    <a href="" target="_blank">
+                        <img src="./img//HomePage/slide-2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="slide__item">
+                    <a href="" target="_blank">
+                        <img src="./img//HomePage/slide-3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="slide__item">
+                    <a href="" target="_blank">
+                        <img src="./img//HomePage/slide-4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="slide__item">
+                    <a href="" target="_blank">
+                        <img src="./img//HomePage/slide-5.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="partner">
+            <div class="partner__container">
+                <div class="partner__heading">
+                    <h2 class="partner__heading--title">
+                        Học tập xu hướng MMO, kinh doanh, tiếp thị số mới và nổi bật 2020
+                    </h2>
+                </div>
+                <div class="partner__list">
+                    <div class="partner__item">
+                        <a href="" class="partner__item--link">
+                            <div class="partner__item--img">
+                                <img src="./img/HomePage/partner-donniechu.jpg" alt="">
+                            </div>
+                            <p class="partner__learn">
+                                Học Facebook từ
+                            </p>
+                            <h3 class="partner__name">
+                                Donie Chu
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="partner__item">
+                        <a href="" class="partner__item--link">
+                            <div class="partner__item--img">
+                                <img src="./img/HomePage/partner-laivietnam.jpg" alt="">
+                            </div>
+                            <p class="partner__learn">
+                                Học Facebook từ
+                            </p>
+                            <h3 class="partner__name">
+                                Donie Chu
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="partner__item">
+                        <a href="" class="partner__item--link">
+                            <div class="partner__item--img">
+                                <img src="./img/HomePage/partner-phungthaihoc.jpg" alt="">
+                            </div>
+                            <p class="partner__learn">
+                                Học Facebook từ
+                            </p>
+                            <h3 class="partner__name">
+                                Donie Chu
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="partner__item">
+                        <a href="" class="partner__item--link">
+                            <div class="partner__item--img">
+                                <img src="./img/HomePage/partner-thekhuong.jpg" alt="">
+                            </div>
+                            <p class="partner__learn">
+                                Học Facebook từ
+                            </p>
+                            <h3 class="partner__name">
+                                Donie Chu
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="partner__item">
+                        <a href="" class="partner__item--link">
+                            <div class="partner__item--img">
+                                <img src="./img/HomePage/partner-thaotran.jpg" alt="">
+                            </div>
+                            <p class="partner__learn">
+                                Học Facebook từ
+                            </p>
+                            <h3 class="partner__name">
+                                Donie Chu
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="partner__item">
+                        <a href="" class="partner__item--link">
+                            <div class="partner__item--img">
+                                <img src="./img/HomePage/partner-nguyenphuquy.jpg" alt="">
+                            </div>
+                            <p class="partner__learn">
+                                Học Facebook từ
+                            </p>
+                            <h3 class="partner__name">
+                                Donie Chu
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="partner__item">
+                        <a href="" class="partner__item--link">
+                            <div class="partner__item--img">
+                                <img src="./img/HomePage/partner-nguyentrungthieu.jpg" alt="">
+                            </div>
+                            <p class="partner__learn">
+                                Học Facebook từ
+                            </p>
+                            <h3 class="partner__name">
+                                Donie Chu
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="partner__item">
+                        <a href="" class="partner__item--link">
+                            <div class="partner__item--img">
+                                <img src="./img/HomePage/partner-cris.jpg" alt="">
+                            </div>
+                            <p class="partner__learn">
+                                Học Facebook từ
+                            </p>
+                            <h3 class="partner__name">
+                                Donie Chu
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="partner__item">
+                        <a href="" class="partner__item--link">
+                            <div class="partner__item--img">
+                                <img src="./img/HomePage/partner-hungvuong.jpg" alt="">
+                            </div>
+                            <p class="partner__learn">
+                                Học Facebook từ
+                            </p>
+                            <h3 class="partner__name">
+                                Donie Chu
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="partner__item">
+                        <a href="" class="partner__item--link">
+                            <div class="partner__item--img">
+                                <img src="./img/HomePage/partner-dungpham.jpg" alt="">
+                            </div>
+                            <p class="partner__learn">
+                                Học Facebook từ
+                            </p>
+                            <h3 class="partner__name">
+                                Donie Chu
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="more-expert">
+                    <p class="more-expert-text">
+                        Và nhiều expert hàng đầu khác, luôn cập nhật nội dung hàng tháng
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="news__container">
+                <div class="news-list">
+                    <div class="news-item">
+                        <a href="">
+                            <img src="./img/HomePage/news-vtv.png" alt="">
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="">
+                            <img src="./img/HomePage/news-dantri.png" alt="">
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="">
+                            <img src="./img/HomePage/news-cafebiz.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home__section">
+            <div class="home__section--container">
+                <div class="home__section--heading">
+                    <h3 class="home__section--heading-title">
+                        <i class="fas fa-fire home__section--heading-icon"></i>
+                        Xu hướng 24h qua
+                    </h3>
+                </div>
+                <div class="home__section--list">
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/xuhuong-3.png" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <h3 class="home__section--item-description">
+                                    Khóa học Kiếm tiền với Affiliate Marketing trên Shopee dành riêng cho Seller - Đa
+                                    dạng
+                                    hóa nguồn thu nhập khi kinh doanh trên Shopee
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/xuhuong-author-1.png" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Shopee Affiliate Team
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-icon">
+                                        <i class="fas fa-fire"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/xuhuong-2.jpg" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <h3 class="home__section--item-description">
+                                    Khóa học hướng dẫn bán hàng online không cần vốn kiếm $500 - $1000/tháng bằng hình
+                                    thức Shopee Dropshipping
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-laivietnam.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Lai Viết Nam
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-icon">
+                                        <i class="fas fa-fire"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/xuhuong-1.png" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <h3 class="home__section--item-description">
+                                    Khóa học Xây dựng kênh Youtube content để kiếm tiền với affiliate marketing - Học từ
+                                    cá nhân kiếm trăm triệu mỗi tháng với hình thức này
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-hungvuong.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Hùng Vương
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-icon">
+                                        <i class="fas fa-fire"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home__section">
+            <div class="home__section--container">
+                <div class="home__section--heading">
+                    <h3 class="home__section--heading-title">
+                        <i class="far fa-star home__section--heading-icon"></i>
+                        Nổi bật tháng này
+                    </h3>
+                </div>
+                <div class="home__section--list">
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/noibat-1.png" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <div class="home__section--item-tag">
+                                    <span class="tag-content">
+                                        #Content Marketing
+                                    </span>
+                                    <span class="tag-content">
+                                        #Copywriting
+                                    </span>
+                                </div>
+                                <h3 class="home__section--item-description">
+                                    Phùng Thái Học: Khóa học viết quảng cáo - nghệ thuật của tư duy và ngôn từ
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-phungthaihoc.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Phùng Thái Học
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-img">
+                                        <img src="./img/HomePage/label-trending.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/noibat-2.jpg" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <div class="home__section--item-tag">
+                                    <span class="tag-content">
+                                        #MMO
+                                    </span>
+                                </div>
+                                <h3 class="home__section--item-description">
+                                    Ebook MMO cho người mới bắt đầu - Lộ trình tư duy & phương hướng tìm ra hình thức
+                                    MMO nên theo đuổi (Version 2020)
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-laivietnam.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Thế Khương
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-img">
+                                        <img src="./img/HomePage/label-trending.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/noibat-3.png" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <div class="home__section--item-tag">
+                                    <span class="tag-content">
+                                        #Digital Marketing
+                                    </span>
+                                    <span class="tag-content">
+                                        #Landing Page
+                                    </span>
+                                </div>
+                                <h3 class="home__section--item-description">
+                                    Kỹ năng tự tạo nội dung & thiết kế Landing Page đầy thuyết phục, nhanh chóng và chi
+                                    phí thấp nhất. "Học hỏi" bất cứ Landing Page hiệu quả nào trong 3 giờ để tăng doanh
+                                    thu.
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-hungvuong.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Dương Trọng Nghĩa
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-img">
+                                        <img src="./img/HomePage/label-trending.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home__section">
+            <div class="home__section--container">
+                <div class="home__section--heading">
+                    <h3 class="home__section--heading-title">
+                        <i class="far fa-clock home__section--heading-icon" style="color: #2F85FF;"></i>
+                        Sắp có mặt tại KTcity
+                    </h3>
+                </div>
+                <div class="home__section--list">
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/sapco-1.png" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <div class="home__section--item-tag">
+                                    <span class="tag-content">
+                                        #Digital Marketing
+                                    </span>
+                                </div>
+                                <h3 class="home__section--item-description">
+                                    Khóa học Digital Marketing Mindset - Thấu hiểu tổng quan & bản chất của Digital
+                                    Marketing để có hướng đi bài bản & phát triển dài lâu
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-phungthaihoc.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Andy Vũ
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-img">
+                                        <img src="./img/HomePage/label-new.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/sapco-2.png" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <div class="home__section--item-tag">
+                                    <span class="tag-content">
+                                        #MMO
+                                    </span>
+                                    <span class="tag-content">
+                                        #E-commerce
+                                    </span>
+                                </div>
+                                <h3 class="home__section--item-description">
+                                    Khóa học Cày đơn affiliate với sàn Shopee - Tạo thu nhập với affiliate marketing
+                                    trên sàn TMĐT có traffic cao nhất Việt Nam - Eric Trần
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-laivietnam.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Eric Trần
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-img">
+                                        <img src="./img/HomePage/label-new.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/sapco-3.png" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <div class="home__section--item-tag">
+                                    <span class="tag-content">
+                                        #MMO
+                                    </span>
+                                    <span class="tag-content">
+                                        #E-commerce
+                                    </span>
+                                </div>
+                                <h3 class="home__section--item-description">
+                                    Khóa học Nhập hàng Trung Quốc TaoBao Tmall 1688 không cần biết tiếng Trung - Khai
+                                    thác nguồn hàng đa dạng và theo xu hướng để kinh doanh online - Đồng Quốc Vương
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-hungvuong.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Đông Quốc Vương
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-img">
+                                        <img src="./img/HomePage/label-new.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/sapco-4.png" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <div class="home__section--item-tag">
+                                    <span class="tag-content">
+                                        #Digital Marketing
+                                    </span>
+                                </div>
+                                <h3 class="home__section--item-description">
+                                    Khóa học Chiến lược Marketing cho Spa, Thẩm mỹ viện, Nha khoa - Cách thức xây dựng &
+                                    vận hành hệ thống kinh doanh trong mảng Làm Đẹp một cách bài bản để phát triển bền
+                                    vững
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-hungvuong.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Đỗ Đăng Khoa
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-img">
+                                        <img src="./img/HomePage/label-new.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home__section">
+            <div class="home__section--container">
+                <div class="home__section--heading">
+                    <h3 class="home__section--heading-title">
+                        <i class="fas fa-book home__section--heading-icon" style="color: #2F85FF;"></i>
+                        Kiến thức chất lượng khác
+                    </h3>
+                </div>
+                <div class="home__section--list">
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/kienthuc-1.png" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <div class="home__section--item-tag">
+                                    <span class="tag-content">
+                                        #Digital Marketing
+                                    </span>
+                                </div>
+                                <h3 class="home__section--item-description">
+                                    Khóa học Digital Marketing Mindset - Thấu hiểu tổng quan & bản chất của Digital
+                                    Marketing để có hướng đi bài bản & phát triển dài lâu
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-phungthaihoc.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Andy Vũ
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-img">
+                                        <img src="./img/HomePage/label-new.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/kienthuc-2.png" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <div class="home__section--item-tag">
+                                    <span class="tag-content">
+                                        #MMO
+                                    </span>
+                                    <span class="tag-content">
+                                        #E-commerce
+                                    </span>
+                                </div>
+                                <h3 class="home__section--item-description">
+                                    Khóa học Cày đơn affiliate với sàn Shopee - Tạo thu nhập với affiliate marketing
+                                    trên sàn TMĐT có traffic cao nhất Việt Nam - Eric Trần
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-laivietnam.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Eric Trần
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-img">
+                                        <img src="./img/HomePage/label-new.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/kienthuc-3.png" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <div class="home__section--item-tag">
+                                    <span class="tag-content">
+                                        #MMO
+                                    </span>
+                                    <span class="tag-content">
+                                        #E-commerce
+                                    </span>
+                                </div>
+                                <h3 class="home__section--item-description">
+                                    Khóa học Nhập hàng Trung Quốc TaoBao Tmall 1688 không cần biết tiếng Trung - Khai
+                                    thác nguồn hàng đa dạng và theo xu hướng để kinh doanh online - Đồng Quốc Vương
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-hungvuong.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Đông Quốc Vương
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-img">
+                                        <img src="./img/HomePage/label-new.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/kienthuc-4.jpg" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <div class="home__section--item-tag">
+                                    <span class="tag-content">
+                                        #MMO
+                                    </span>
+                                    <span class="tag-content">
+                                        #Youtube
+                                    </span>
+                                </div>
+                                <h3 class="home__section--item-description">
+                                    Ebook Quy trình 12 bước SEO video đạt thứ hạng cao trrne Youtube
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-hungvuong.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Hùng Vương
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-img">
+                                        <img src="./img/HomePage/label-new.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/kienthuc-5.png" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <div class="home__section--item-tag">
+                                    <span class="tag-content">
+                                        #MMO
+                                    </span>
+                                </div>
+                                <h3 class="home__section--item-description">
+                                    Khóa học Kiếm tiền với Affiliate Marketing trên Shopee dành riêng cho Seller - Đa
+                                    dạng hóa nguồn thu nhập khi kinh doanh trên Shopee
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/xuhuong-author-1.png" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Shoppe Affiliate Team
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-img">
+                                        <img src="./img/HomePage/label-new.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__section--item">
+                        <a href="">
+                            <div class="home__section--item-img">
+                                <img src="./img/HomePage/sapco-4.png" alt="">
+                            </div>
+                            <div class="home__section--item-content">
+                                <div class="home__section--item-tag">
+                                    <span class="tag-content">
+                                        #Digital Marketing
+                                    </span>
+                                </div>
+                                <h3 class="home__section--item-description">
+                                    Khóa học Chiến lược Marketing cho Spa, Thẩm mỹ viện, Nha khoa - Cách thức xây dựng &
+                                    vận hành hệ thống kinh doanh trong mảng Làm Đẹp một cách bài bản để phát triển bền
+                                    vững
+                                </h3>
+                                <div class="home__section--item-footer">
+                                    <div class="home__section--item-author">
+                                        <div class="home__section--item-avatar">
+                                            <img src="./img/HomePage/partner-hungvuong.jpg" alt="">
+                                        </div>
+                                        <span class="home__section--item-name">
+                                            Đỗ Đăng Khoa
+                                        </span>
+                                    </div>
+                                    <div class="home__section--footer-img">
+                                        <img src="./img/HomePage/label-new.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="view-more">
+                    <button class="view-more-button">
+                        Xem thêm...
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="home__section--container">
+                <div class="about__item">
+                    <div class="about__item--box">
+                        <img src="./img/HomePage/img-experts1.png" alt="">
+                    </div>
+                    <div class="about__item--box">
+                        <div class="about__item--box-text">
+                            <h3>
+                                Nâng cao kiến thức của bạn lên từng ngày, có kết quả tương xứng với chi phí bỏ ra
+                            </h3>
+                            <p>
+                                Tất cả kiến thức tại KTcity đều được review bởi đội ngũ chuyên gia có kinh nghiệm. Hãy
+                                chọn Expert hoặc Brand mà bạn tin tưởng & bắt đầu trải nghiệm.
+                            </p>
+                            <p>
+                                Bạn cũng có thể theo lời khuyến nghị của những cá nhân đã trải nghiệm trước đó, người
+                                bạn quen hoặc các KOLs để lựa chọn kiến thức phù hợp.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__item">
+                    <div class="about__item--box">
+                        <img src="./img/HomePage/img-experts2.png" alt="">
+                    </div>
+                    <div class="about__item--box">
+                        <div class="about__item--box-text">
+                            <h3>
+                                Trở thành Expert hoặc Brand, chia sẻ kiến thức & nhận lại không giới hạn giá trị
+                            </h3>
+                            <p>
+                                Xây dựng cộng đồng của riêng bạn & nhận lại không giới hạn giá trị. KTcity & hệ thống
+                                đối tác sẽ quảng bá kiến thức hữu ích tới hàng trăm ngàn cá nhân có nhu cầu cải thiện
+                                chuyên môn.
+                            </p>
+                            <p>
+                                KTcity tập trung xây dựng hình ảnh, thương hiệu cho bạn 1 cách hoàn chỉnh. Ngoài ra, tất
+                                cả các vấn đề về công nghệ luôn được tối ưu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="home__section--container footer__container">
+                <div class="footer__item">
+                    <a href="/" class="logo">
+                        <img src="./img/ktcity-logo.png" alt="">
+                    </a>
+                    <p style="margin-bottom: 1rem;">
+                        Email: support@kt.city
+                    </p>
+                    <p style="margin-bottom: 1rem;">
+                        Hotline: 02877779544
+                    </p>
+                    <p style="margin-bottom: 1rem;">
+                        Giờ làm việc 8h30-18h từ thứ 2 tới thứ 6.
+                    </p>
+                </div>
+
+                <div class="footer__item">
+                    <h4>
+                        Địa chỉ
+                    </h4>
+                    <div class="footer__item--content">
+                        <p>
+                            202 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP HCM
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer__item">
+                    <h4>
+                        Hướng dẫn
+                    </h4>
+                    <div class="footer__item--content">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    Ktcity 101
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Quy chế hoạt động
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <h4>
+                        Khám phá
+                    </h4>
+                    <div class="footer__item--content">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    Solution
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Affiliate Program
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Reviewer Program
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Tin tức
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <h4>
+                        Liên kết
+                    </h4>
+                    <div class="footer__item--content">
+                        <ul class="socials">
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bct">
+                        <a href="">
+                            <img src="./img/bct.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">
+                <p>
+                    Công ty cổ phần công nghệ giáo dục KTgroup - GCNĐKDN số 0315773194 do Sở Kế hoạch và Đầu tư thành phố Hồ Chí Minh cấp lần đầu ngày 05/07/2019.
+                </p>
+            </div>
+        </footer>
+
+    </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/fontawesome.min.js"></script>
     <script src="js/slick.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider__main').slick({
+                arrows: false,
+                dots: true,
+                dotsClass: 'slick-dots',
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 2500
+            });
+            $('.partner__list').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

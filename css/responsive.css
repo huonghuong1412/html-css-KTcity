@@ -1,0 +1,121 @@
+
+@media screen and (min-width: 1024px) {
+    .nav__link > img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar {
+        height: 100%;
+        width: 30rem;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 0.3s all ease;
+        transform: translateX(102%);
+        box-shadow: rgba(66, 165, 245, 0.3) 4px 4px 16px 0;
+    }
+
+    .navbar-resposive {
+        transform: translateX(0);
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: flex-start;
+        height: calc(100vh - 120px);
+        overflow-y: auto;
+        padding-bottom: 2rem;
+    }
+
+    .header__right {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__toggle--close {
+        display: block;
+    }
+
+    .header__right .header__bag {
+        margin-right: 20px;
+    }
+
+    .header__bar--icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__right--icon {
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .nav__item {
+        width: 100%;
+    }
+
+    .nav__link {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 1.5rem 3rem;
+        line-height: 1.6rem;
+    }
+
+    .nav__item:nth-child(5) {
+        margin-bottom: 20px;
+    }
+
+    .nav__link--login {
+        min-width: 12rem;
+        color: rgb(81, 155, 244);
+        line-height: 1.6rem;
+        padding: 1rem 1rem;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav__link--avatar,
+    .nav__link--cart {
+        display: none;
+    }
+
+    .nav__link > img {
+        max-width: 1.6rem;
+        margin-right: 2rem;
+    }
+
+    .guest {
+        display: flex;
+        align-items: center;
+        padding: 3rem;
+        background: url('../img/img-square.png') 5% 15% / 12% no-repeat var(--primaryLight-color);
+    }
+
+    /* --------  Slide   -------- */
+
+    .slick-slide>div img {
+        max-height: 28rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .slider__item img {
+        height: 25rem;
+    }
+
+    .slick-dots li {
+        margin: 0 0.25rem;
+    }
+
+    .slick-dots li button {
+        width: 1rem;
+        height: 1rem;
+    }
+}
