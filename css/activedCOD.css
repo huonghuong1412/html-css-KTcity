@@ -1,0 +1,81 @@
+.actived {
+    padding: 7rem 2rem;
+    margin: 0px auto;
+}
+
+.actived__container {
+    max-width: 65rem;
+    text-align: center;
+}
+
+.actived__heading {
+    width: 100%;
+}
+
+.actived__heading--title {
+    font-weight: bold;
+    font-size: 3.8rem;
+    color: rgb(39, 49, 103);
+    margin-bottom: 2.5rem;
+}
+
+.actived__heading--text {
+    color: rgb(84, 84, 84);
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 3.5rem;
+}
+
+.actived__form {
+    display: flex;
+    margin: 2rem 0px;
+}
+
+.actived__form--input {
+    font-size: 2rem;
+    background-color: rgb(245, 245, 245);
+    color: rgb(129, 129, 129);
+    width: calc(100% - 18.5rem);
+    margin-right: 2.5rem;
+    padding: 1.5rem 3rem;
+    border-radius: 9px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
+
+.actived__form--input::-webkit-input-placeholder {
+    color: inherit;
+}
+
+.actived__form--button {
+    color: white;
+    font-size: 2rem;
+    background-color: rgb(41, 121, 255);
+    box-shadow: rgba(153, 196, 227, 0.35) 0px 4px 10px;
+    font-weight: 500;
+    width: 16rem;
+    display: block;
+    padding: 1rem 2.5rem;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+}
+
+.actived__form--button:hover {
+    background-color: rgb(71, 137, 252);
+}
+
+.actived__view {
+    margin-top: 1rem;
+    font-weight: 300;
+    color: rgb(165, 165, 165);
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: inline-block
+}
+
+.actived__view--icon {
+    margin-right: 1rem;
+}

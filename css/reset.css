@@ -44,7 +44,14 @@ button,
 input,
 select,
 textarea {
-    margin: 0
+    margin: 0;
+    border: none;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 html {

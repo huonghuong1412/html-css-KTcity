@@ -1,0 +1,115 @@
+.trending {
+    position: relative;
+}
+
+.trending__banner {
+    position: relative;
+}
+
+.trending__banner img {
+    max-width: 100%;
+}
+
+.trending__banner-content {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+
+}
+
+.trending__banner-content-title {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    line-height: 3.6rem;
+    margin-bottom: 2.4rem;
+}
+
+.trending__banner-content-text {
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 300;
+    line-height: 3.2rem;
+}
+
+.trending__main {
+    width: 100%;
+}
+
+.trending__main--list {
+    position: relative;
+    z-index: 10;
+    margin-top: -10rem;
+    background-color: white;
+    box-shadow: rgba(66, 165, 245, 0.15) 0px 0px 8px 0px;
+    border-radius: 12px;
+    padding: 3rem 5rem;
+}
+
+.trending__main--item {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 2px solid rgb(215, 238, 255);
+}
+
+.trending__main--item-avatar {
+    max-width: 100%;
+}
+
+.trending__main--item-avatar img{
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    box-shadow: rgba(66, 165, 245, 0.15) 0px 0px 8px 0px;
+    border-radius: 8px;
+}
+
+.trending__main--item-content {
+    width: calc(100% - 32rem);
+    padding: 0px 4rem;
+}
+
+.trending__main--item-course {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.trending__main--item-link {
+    display: block;
+    color: rgb(106, 114, 128);
+    line-height: 3.6rem;
+}
+
+.trending__main--item-learn {
+    color: rgb(106, 114, 128);
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.trending__main--item-learn span{
+    color: rgb(39, 49, 103);
+}
+
+.trending__main--item-number {
+    line-height: 1;
+    width: 20rem;
+    text-align: center;
+    font-size: 12.5rem;
+    color: rgb(229, 229, 229);
+    font-weight: bold;
+}
