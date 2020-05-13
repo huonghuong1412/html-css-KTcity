@@ -1,0 +1,323 @@
+
+.checkout {
+    min-height: calc(100vh - 35rem);
+    padding: 6rem 4rem 5rem;
+    background-color: #F8F9FF;
+}
+
+.checkout__container {
+    background-color: white;
+    width: 100%;
+    max-width: 90rem;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 0px auto;
+    flex-flow: row wrap;
+    padding: 3rem 6rem;
+    box-shadow: rgba(153, 196, 227, 0.4) 0px 5px 15px;
+}
+
+.checkout__steps {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed rgb(243, 243, 243);
+}
+
+.checkout__steps--list {
+    display: flex;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: relative;
+}
+
+.checkout__steps--list::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 4%;
+    width: 91%;
+    height: 4px;
+    background-color: rgb(169, 170, 188);
+}
+
+.checkout__steps--list::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 4%;
+    width: 0px;
+    height: 4px;
+    background-color: rgb(41, 121, 255);
+    border-radius: 5rem;
+    transition: width 0.4s linear 0s;
+}
+
+.checkout__steps--item {
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgb(41, 121, 255);
+}
+
+.checkout__steps--item.active .pointed {
+    transition-delay: 0.425s;
+    background-color: rgb(41, 121, 255);
+    box-shadow: white 0px 0px 0px 4px, rgb(41, 121, 255) 0px 0px 0px 8px;
+}
+
+.checkout__steps--item:not(:first-child) .pointed {
+    background-color: white;
+    box-shadow: rgb(169, 170, 188) 0px 0px 0px 4px;
+}
+
+.pointed {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(169, 170, 188);
+    box-shadow: rgb(169, 170, 188) 0px 0px 0px 4px;
+    border-radius: 5rem;
+    margin: 0px auto 2rem;
+    transition: all 0.25s linear 0s;
+}
+
+.checkout__steps--item p {
+    color: rgb(169, 170, 188);
+    transition: all 0.25s linear 0s;
+}
+
+
+/* -------   List courses   --------- */
+
+.checkout__info {
+    width: 100%;
+}
+
+.checkout__info--title {
+    font-size: 3rem;
+    color: rgb(39, 49, 103);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.checkout__info--desc {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    color: rgb(106, 114, 128);
+}
+
+.checkout__info--desc .count {
+    font-weight: 500;
+    color: #2979ff;
+}
+
+.checkout__info--list {
+    margin-top: 2rem;
+}
+
+.checkout__info--item {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    flex-flow: row wrap;
+    border-bottom: 1px solid rgb(243, 243, 243);
+}
+
+.checkout__info--item-info {
+    display: flex;
+    width: 50%;
+    flex-flow: row nowrap;
+}
+
+.checkout__info--item-info img {
+    width: 7.5rem;
+    height: 7.5rem;
+    object-fit: cover;
+}
+
+.checkout__info--item-content {
+    padding-left: 2rem;
+    width: calc(100% - 7.5rem);
+}
+
+.item-content-title {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: rgb(68, 70, 85);;
+}
+
+.checkout__info--item-price {
+    width: 15rem;
+    text-align: left;
+}
+
+.price-last {
+    font-size: 1.8rem;
+    color: #273167;
+}
+
+.price-old {
+    text-decoration: line-through;
+    text-decoration-color: inherit;
+    font-size: 1.4rem;
+    color: #a9aabc;
+}
+
+.percent-sale {
+    font-size: 1.4rem;
+    color: #2979ff;
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+
+.checkout__info--item-join {
+    width: 10rem;
+    text-align: center;
+}
+
+.join-button {
+    color: rgb(41, 121, 255);
+    background-color: transparent;
+    font-size: 1.4rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(41, 121, 255);
+    border-image: initial;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s linear 0s, color 0.2s linear 0s;
+}
+
+.item-action-btn {
+    cursor: pointer;
+}
+
+.item--action-icon {
+    pointer-events: none;
+    transition: color 0.2s linear 0s;
+    font-size: 1.6rem;
+    color: #95a4bd;
+}
+
+/* -------   Coupon   --------- */
+
+.coupon {
+    position: relative;
+}
+
+.coupon__checkout {
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 2rem 0px;
+}
+/* 
+.coupon__checkout--info {
+    
+} */
+
+.coupon__checkout--info-pay {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: rgb(68, 70, 85);
+    margin-bottom: 2rem;
+}
+
+.coupon__checkout--info-total {
+    color: rgb(106, 114, 128);
+    display: inline-block;
+    font-weight: 400;
+    margin: 0px 5px;
+
+}
+
+.coupon__checkout--info-discount {
+    color: rgb(169, 170, 188);
+    font-size: 1.6rem;
+    text-decoration: line-through;
+    display: inline-block;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+.coupon__checkout--info-sale {
+    color: rgb(0, 214, 100);
+    display: inline-block;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+.coupon__checkout--info-form {
+    width: fit-content;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border-width: thin;
+    border-style: solid;
+    border-color: rgb(229, 229, 229);
+    border-image: initial;
+    border-radius: 0px;
+    margin-top: 25px;
+}
+
+.coupon__checkout--info-input {
+    font-weight: 300;
+    font-size: 2rem;
+    color: rgb(84, 84, 84);
+    max-width: 18rem;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 0px;
+    padding: 1.5rem 2rem;
+}
+
+.coupon__checkout--info-button {
+    color: white;
+    background-color: rgb(196, 196, 196);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+    min-width: 14rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+.coupon__checkout--info-next {
+    position: relative;
+}
+
+.coupon__checkout--info-next-button {
+    color: white;
+    font-size: 2rem;
+    box-shadow: rgba(153, 196, 227, 0.25) 0px 3px 8px;
+    background-color: rgb(41, 121, 255);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.5rem 2.75rem;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    cursor: pointer;
+}
+
+.coupon__checkout--info-icon {
+    margin-right: 1rem;
+}
